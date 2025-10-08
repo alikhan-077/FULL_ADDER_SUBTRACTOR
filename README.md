@@ -38,18 +38,84 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
+FULL ADDDER
+
+<img width="654" height="430" alt="image" src="https://github.com/user-attachments/assets/cf80cd7b-5c9a-4a76-ac0f-4618eb9242ea" />
+
+FULL SUBTRACTOR 
+
+<img width="438" height="393" alt="image" src="https://github.com/user-attachments/assets/4434a03c-27a2-4394-8066-8a552e4508fb" />
+
+
+
 **Procedure**
 
-Write the detailed procedure here
+1.Type the program in Quartus software.
+
+2.Compile and run the program.
+
+3.Generate the RTL schematic and save the logic diagram.
+
+4.Create nodes for inputs and outputs to generate the timing diagram.
+
+5.For different input combinations generate the timing diagram.
 
 **Program:**
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+
+Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. 
+
+i)FULL ADDER
+
+module fa(a,b,cin,sum,carry);
+
+input a,b,cin;
+
+output sum,carry;
+
+assign sum=( (a ^ b)^cin);
+
+assign carry= ( (a & b)| ( cin &(a ^ b )));
+
+endmodule
+
+ii)FULL SUBTRACTOR
+
+module fs(a,b,bin,difference,borrow);
+
+input a,b,bin;
+
+output difference,borrow;
+
+assign difference= ( (a ^ b)^bin);
+
+assign borrow= ( ( a & b)| ( bin & ((a ^ b ))));
+
+endmodule
 
 **RTL Schematic**
 
+FULL ADDDER :
+
+<img width="1490" height="711" alt="Screenshot 2025-10-07 142141" src="https://github.com/user-attachments/assets/7dbb977d-80da-448f-a640-d03a7707d8b0" />
+
+
+HALF SUBTRACTOR:
+
+<img width="1471" height="558" alt="Screenshot 2025-10-07 143747" src="https://github.com/user-attachments/assets/5465297f-b738-48e3-b078-cfbaeb4950c0" />
+
+
 **Output Timing Waveform**
+
+FULL ADDER :
+
+<img width="1919" height="453" alt="Screenshot 2025-10-07 143051" src="https://github.com/user-attachments/assets/4a80cb7b-3c4a-4819-9532-5a977eed4444" />
+
+
+FULL SUBTRACTOR:
+
+<img width="1910" height="416" alt="Screenshot 2025-10-07 144205" src="https://github.com/user-attachments/assets/f5112001-676b-4868-8e2a-b46048efa4af" />
+
 
 **Result:**
 
