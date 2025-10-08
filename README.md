@@ -96,12 +96,10 @@ endmodule
 **RTL Schematic**
 
 FULL ADDDER :
-
 <img width="1490" height="711" alt="Screenshot 2025-10-07 142141" src="https://github.com/user-attachments/assets/7dbb977d-80da-448f-a640-d03a7707d8b0" />
 
 
 HALF SUBTRACTOR:
-
 <img width="1471" height="558" alt="Screenshot 2025-10-07 143747" src="https://github.com/user-attachments/assets/5465297f-b738-48e3-b078-cfbaeb4950c0" />
 
 
